@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Javascript Example</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            h1 {
+                background-color:dodgerblue;
+                color:white;
+                padding: 0.5rem;
+            }
+            #demo {
+                background-color: lightgray;
+                padding: 0.5rem;
+            }
+            #demo::before {
+                content: "» ";
+            }
+        </style>
+    </head>
+
+    <body onload="output()">
+        <h1>Powered by Javascript</h1>
+
+        <p>Output:</p>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        function output() {
+            var a = true;
+            var b = 10 < 9;
+            var result = a || b ;
+            
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+
+</html>

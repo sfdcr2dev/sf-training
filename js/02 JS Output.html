@@ -28,11 +28,9 @@
         <p>Input:</p>
         <p><input type="text" id="myInput"></p>
         <div>
-            <button onclick="changeText()">Change Text</button>
-            <button onclick="setFontSizeSmall()">Small</button>
-            <button onclick="setFontSizeLarge()">Large</button>
-            <button onclick="showText()">Show</button>
-            <button onclick="hideText()">Hide</button>
+            <button onclick="changeText()">Inner HTML</button>
+            <button onclick="alertText()">Alert</button>
+            <button onclick="consoleLog()">Console Log</button>
         </div>
 
         <p>Output:</p>
@@ -44,17 +42,13 @@
             let value = document.getElementById("myInput").value;
             document.getElementById("demo").innerHTML = value;
         }
-        function setFontSizeSmall() {
-            document.getElementById("demo").style.fontSize = "0.5rem";
+        function alertText() {
+            let value = document.getElementById("myInput").value;
+            window.alert(value);
         }
-        function setFontSizeLarge() {
-            document.getElementById("demo").style.fontSize = "2rem";
-        }
-        function showText() {
-            document.getElementById("demo").style.display = "block";
-        }
-        function hideText() {
-            document.getElementById("demo").style.display = "none";
+        function consoleLog() {
+            let value = document.getElementById("myInput").value;
+            console.log(value);
         }
     </script>
 

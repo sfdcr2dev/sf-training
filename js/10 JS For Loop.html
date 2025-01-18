@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Javascript Example</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            h1 {
+                background-color: dodgerblue;
+                color: white;
+                padding: 0.5rem;
+            }
+
+            #demo {
+                background-color: lightgray;
+                padding: 0.5rem;
+            }
+
+            #demo::before {
+                content: "» ";
+            }
+        </style>
+    </head>
+
+    <body onload="output()">
+        <h1>Powered by Javascript</h1>
+
+        <p>Output:</p>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        function output() {
+            var series = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+            var sum = 0;
+            for (var i = 0; i < series.length; i++) {
+                sum = sum + series[i];
+            }
+
+            document.getElementById("demo").innerHTML = sum;
+        }
+    </script>
+
+</html>

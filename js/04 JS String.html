@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Javascript Example</title>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            h1 {
+                background-color:dodgerblue;
+                color:white;
+                padding: 0.5rem;
+            }
+            #demo {
+                background-color: lightgray;
+                padding: 0.5rem;
+            }
+            #demo::before {
+                content: "» ";
+            }
+        </style>
+    </head>
+
+    <body onload="output()">
+        <h1>Powered by Javascript</h1>
+
+        <p>Output:</p>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        function output() {
+            var carName1 = "Volvo XC60";
+            var carName2 = 'Volvo XC60';
+            
+            document.getElementById("demo").innerHTML = carName1 + ", " + carName2;
+        }
+    </script>
+
+</html>
