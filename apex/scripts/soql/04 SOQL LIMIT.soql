@@ -1,1 +1,1 @@
-SELECT Id, Name FROM Functional_Location__c
+SELECT Id, Name, Phone FROM Account LIMIT 1

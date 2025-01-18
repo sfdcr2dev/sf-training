@@ -1,1 +1,3 @@
-SELECT Id, Name FROM Functional_Location__c
+SELECT Id, Name, Phone FROM Account WHERE Name = 'SFDC Computing';
+
+SELECT Id, Name, Phone FROM Account WHERE (Name = 'SFDC Computing' AND NumberOfEmployees > 25);
