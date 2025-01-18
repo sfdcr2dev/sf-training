@@ -1,0 +1,32 @@
+<template>
+    <div>
+        <c-step-page-header 
+            num-steps="1" 
+            current-step="1" 
+            percentage={percentage}
+            is-current={isCurrent} 
+            record-id={recordId}></c-step-page-header>
+            
+        <c-lwc-modal
+            title={modalTitle}
+            is-visible={modalVisible} 
+            confirm-text={modalConfirmButton} 
+            cancel-text={modalCancelButton} 
+            name={modalName}
+            message={modalMessage} 
+            onselected={handleModalSelection}></c-lwc-modal>
+        <h1>EQCC Form: TOP TRAINING 101</h1>
+        <div>
+            <label>Name</label>
+            <input data-id="1-1-input-1">
+        </div>
+
+        <div>
+            <button onclick={openSaveModal}>Save Draft</button> 
+            <button onclick={openModal}>Submit</button> 
+            <button onclick={openSubmitModal}>Submit Special</button> 
+            <button onclick={openRejectModal}>Reject</button> 
+            <button onclick={openRecallModal}>Recall</button>
+        </div>
+    </div>
+</template>
